@@ -61,7 +61,7 @@
           break;
         }
       }
-      if(nthOfType != 1) {
+      if(siblings.length != 1) {
         localSelector += ":nth-of-type("+nthOfType+")";
       }
 

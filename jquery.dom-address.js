@@ -15,8 +15,14 @@
   };
 
   function getAddress(dom) {
-    if(dom === null) {
+    if(dom === null || dom === undefined) {
       return null;
+    }
+    else if(dom === window) {
+      return "window";
+    }
+    else if(dom === document) {
+      return "document";
     }
     var currentElement = dom
       , html = document.body.parentElement
